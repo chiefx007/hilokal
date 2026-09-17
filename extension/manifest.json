@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Hilokal JWT Grabber",
+  "version": "1.0.0",
+  "description": "Fetches your JWT/auth token from hilokal.com when you're logged in.",
+  "permissions": ["activeTab", "scripting", "cookies", "clipboardWrite", "webRequest", "storage"],
+  "host_permissions": [
+    "https://www.hilokal.com/*",
+    "https://*.hilokal.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Hilokal JWT Grabber"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
